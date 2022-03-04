@@ -20,6 +20,7 @@ main {
     // margin: auto;
     // max-width: 1440px;
     height: 100vh;
+    min-height: 675px;
 }
 
 .content {
@@ -162,8 +163,6 @@ main {
         width: 100%;
     }
 
-
-
     .picture {
         content: url('../images/hero-mobile.jpg');
         order: -1;
@@ -205,4 +204,9 @@ main {
     .btn {
         width: 75px;
     }
+}
+
+@media screen and (max-height: 675px) {
+
+    
 }
