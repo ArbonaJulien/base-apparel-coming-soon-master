@@ -34,22 +34,17 @@ el_form.addEventListener('submit', (event) => {
             el_email.value = "";
             console.log('Submit ! ');
         }else {
+            // Stop submit form
+            event.preventDefault();
             showError();
         }
-        
     }
-    // Stop submit form
-    event.preventDefault();
 });
 
 function validationEmail(email) {
     let regex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
     
-    if (regex.test(email)) {
-        return true;
-    }else {
-        return false;
-    }
+    return regex.test(email);
 }
 
 function showError() {
