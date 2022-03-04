@@ -43,7 +43,6 @@ el_form.addEventListener('submit', (event) => {
 
 function validationEmail(email) {
     let regex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
-    
     return regex.test(email);
 }
 
